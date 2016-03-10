@@ -1,0 +1,182 @@
+body {
+	/*This is a comment line in a css file.*/
+	background-color: #eeeeee;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding-bottom: 200px;
+}
+nav	{
+	background-color: #ffffff;
+
+	/*  to apply a color on the top border */
+	border-top-color: #ff4700;
+	border-top-width: 4px;
+	border-top-style: solid;
+
+	/*     or you can type  border-top-order: #ff4700 4px solid;  */
+
+}
+nav li {
+	list-style: none;
+	display: inline;
+	margin-left: 20px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+
+}
+
+
+nav a {
+/*nav ul li a { or*/ 
+	color: #ff4700;   /*orange link*/
+	text-decoration: none;
+}
+
+nav a:hover	{        /*when the cursor is hovering about a tab*/
+	text-decoration: underline;
+
+	/*   Other attributes you can add
+	background-color: red;
+	/*color: pink;        */
+
+}
+
+nav img {
+	vertical-align: middle;
+	margin-right: 500px;
+
+}
+
+#buy-now {
+/*	background-color: #ff4700;      removed because we added the gradient lines below*/  
+	color: #ffffff;
+	padding: 4px;
+	border-radius: 3px;
+/*		border-bottom-left-radius: 10px;
+		border-top-right-radius: 7px;      */
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4700+0,c63500+100 */
+background: #ff4700; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff4700 0%, #c63500 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ff4700 0%,#c63500 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ff4700 0%,#c63500 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4700', endColorstr='#c63500',GradientType=0 ); /* IE6-9 */
+	/* Last line above is a fix to IE6.  */
+
+
+}
+
+#buy-now:hover {
+		text-decoration: none;
+
+/*		Without this section, you can say above   nav a:hov:not(#buy-now) { text-decoration: none;}  */
+}
+
+nav ul {
+	padding-left: 0;
+/*		background-color: red; */
+		 /*used to clearly see the margins of the container */
+	width: 960px;    /*so that the background color of the unordered list does not cover the whole length*/
+	/*  margin: auto;  Margins for left and right; top defaults to 16px*/
+
+	/* margin-left: auto;
+	margin-right: auto;
+	or  margin: margin: top right bottom left; or margin:auto;*/
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+main {
+	width: 960px;  /*To be the same as the width of nav ul */
+	margin: 0 auto;
+}
+
+article header ul {
+	padding-left: 0;
+	list-style: none; /*to get rid of the bullet points*/
+	font-size: smaller;   /*or smaller than the paragraph or font: 12px;*/
+}
+
+article header li {
+	display: inline;
+	margin-right: 10px
+}
+
+article {
+	background-color: #ffffff;
+	width: 66.6%;
+/*	padding: 30px;*/
+	box-sizing: border-box;
+	margin-top: 40px;
+	box-shadow: 0 12px 5px -10px rgba(0,0,0,.3);   
+	 /* box-shadow; x-axis, y-aix, how blurry, size colour (a has to be 0 to 1) */
+}
+
+article header img {
+	max-width: 100%;
+}
+
+.article-content {
+	padding: 0 30px;    /*  padding: 0 30px; ==>0 top and bottom 30px left and right*/
+}
+article h1 {
+	font-family: 'Crete Round', serif;
+	font-size: xx-large;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+article h1 a {
+	color: #333333;   /*#3333 dark grey*/
+	text-decoration: none;
+}
+
+#pinned h1 a:hover {    
+	/*pinned is an id */
+	color: #777777;
+}
+
+article h1 a:hover {
+	color: #ff4700;
+}
+
+article p{
+	color: #333333;
+}
+
+.breakout {
+	font-weight: bold;
+	color: #222222;
+	text-decoration: none;
+	display: inline-block;
+	margin:	15px 0;
+}
+
+article footer {
+	background-color: #fcfcfc;
+	padding: 15px 30px;
+	border-top: 1px solid;
+}
+
+	 /*  .badge because badge is a class  */
+.badge {
+	background-color: #333333;
+	width: 60px;
+	height: 60px;
+	text-align: center;   /*  to get text horizontally-aligned  */
+	border-radius: 50%;    /*   to turn box into a square   */
+	border: 7px white solid;
+	position: relative;   /*  top, right, bottom, and/or left attributes have to be provided w this element    */
+		bottom: 35px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 0;rbga(0,0,0,.3) /*  a = 0 you can't see it    */
+}
+.badge i {
+	color: #ffffff;
+	line-height: 60px;
+	font-size: 25px;
+}
